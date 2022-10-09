@@ -10,24 +10,52 @@ body {
   font-family: roboto, sans-serif;
   color: #212121;
 }
-header {
+
+  .container{
+width: 1200px;
+
+margin: 0 auto;
+padding: 0 15px;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  ul{
+    margin: 0px;
+    padding: 0px;
+  }
+
+.page-header{
   background-color: var(--white-text-color);
 }
+.page-header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
 
 .logo {
-  text-decoration: none;
+   text-decoration: none;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 93px;
 }
 .logo-part {
   color: var(--hover-link-button-color);
 }
+
 .nav-list {
-  list-style-type: none;
+   list-style-type: none;
+   display: flex;
+   padding-left: 0;
+   padding-top: 32px;
+   padding-bottom: 32px;
+
 }
 .nav-link {
   text-decoration: none;
@@ -36,12 +64,17 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+ }
+.nav-li:not(:last-child) {
+  margin-right: 50px;
 }
+
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
   color: var(--hover-link-button-color);
 }
+
 .nav-contact {
   text-decoration: none;
   font-weight: 500;
@@ -50,6 +83,9 @@ header {
   letter-spacing: 0.02em;
   color: var(--basic-text-color);
 }
+ .contact-li:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-contact:hover,
 .nav-contact:focus,
 .nav-contact:active {
@@ -57,6 +93,8 @@ header {
 }
 .section-hero {
   background-color: #2f3032;
+  padding-top: 200px;
+  height: 600px;
 }
 .hero-title {
   font-weight: 900;
@@ -65,15 +103,25 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+ text-align: center;
+ 
+ margin-top: 0;
+ margin-bottom: 30px;
 }
 .hero-button {
-  font-family: Roboto;
+  
+   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1,87;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
   background-color: var(--hover-link-button-color);
+   display: block; 
+    margin-left: auto;
+    margin-right: auto;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus,
@@ -83,7 +131,25 @@ header {
 .hero-button {
   cursor: pointer;
 }
+/* .benefits-title{
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} */
+
+.section-benefits{
+  padding-top: 94px;
+margin-bottom: 57px;
+}
 .benefits-list {
+  display: flex;
   list-style-type: none;
 }
 .benefits-list-title {
@@ -92,6 +158,10 @@ header {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+ margin-bottom: 10px;
+}
+.benefits-li:not(:last-child){
+margin-right: 30px;
 }
 .benefits-list-text {
   font-size: 14px;
@@ -103,25 +173,45 @@ header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.job-section{
+  display: flex;
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+.job-list>li:not(:last-child){
+  margin-right: 30px;
 }
 .job-list {
+  display: flex;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .section-team {
   background-color: #f5f4fa;
+  padding-top: 57px;
+padding-bottom: 94px;
 }
 
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .team-list {
+  display: flex;
   list-style-type: none;
   background-color: #f5f4fa;
+}
+.team-list li:not(:last-child){
+  margin-right: 30px;
 }
 .team-list-color {
   background: #ffffff;
@@ -131,6 +221,8 @@ header {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
@@ -176,8 +268,7 @@ footer {
   color: var(--hover-link-button-color);
 }
 /* porfolio */
-/* hidden title */
-.portfolio-hiden-title .visually-hidden {
+.portfolio-hiden-title  {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -192,6 +283,8 @@ footer {
 
 .portfolio-list {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 .portfolio-button {
   font-family: Roboto;
@@ -199,13 +292,19 @@ footer {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  border: 0;
 }
 .portfolio-button {
   cursor: pointer;
+  padding: 6px 22px;
+  }
+.portfolio-list>li:not(:last-child){
+  margin-right: 8px;
 }
 .portfolio-all {
   color: var(--white-text-color);
   background-color: var(--hover-link-button-color);
+  padding: 6px 25px;
 }
 .portfolio-button:hover {
   color: var(--white-color);

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=header, initial-scale=1.0" />
     <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -12,28 +13,31 @@
     />
   </head>
   <body>
-    <header>
+    <header class="page-header">
+      <div class="container">
       <a href="./index.html" lang="en" class="logo"><span class="logo-part">Web</span> Studio</a>
       <nav>
         <ul class="nav-list">
-          <li>
+          <li class="nav-li">
             <a href="#" class="nav-link">Студія</a>
           </li>
-          <li>
+          <li class="nav-li">
             <a href="./portfolio.html" class="nav-link">Портфоліо</a>
           </li>
-          <li>
+          <li class="nav-li">
             <a href="#" class="nav-link">Контакти</a>
           </li>
         </ul>
       </nav>
       <ul class="nav-list">
-        <li><a href="mailto:info@devstudio.com" class="nav-contact">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="nav-contact">+38 096 111 11 11</a></li>
+        <li class="contact-li"><a href="mailto:info@devstudio.com" class="nav-contact">info@devstudio.com</a></li>
+        <li class="contact-li"><a href="tel:+380961111111" class="nav-contact">+38 096 111 11 11</a></li>
       </ul>
+      </div>
     </header>
     <main>
       <section class="section-portfolio">
+        <div class="container">
         <h1 class="portfolio-hidden-title">Портфоліо</h1>
         <ul class="portfolio-list">
           <li><button class="portfolio-button portfolio-all">Усі</button></li>
@@ -104,9 +108,11 @@
             <p class="portfolio-text">Додаток</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer>
+      <div class="container">
       <a href="./index.html" lang="en" class="footer-logo"
         ><span class="logo-part">Web</span> Studio</a
       >
@@ -125,6 +131,7 @@
           <li><a href="tel:+380961111111" class="footer-contact">+38 096 111 11 11</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
