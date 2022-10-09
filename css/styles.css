@@ -29,11 +29,10 @@ padding: 0 15px;
 .page-header{
   background-color: var(--white-text-color);
 }
-.page-header .container{
+ .page-header .container{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  }
+   align-items: center;   
+  } 
 
 .logo {
    text-decoration: none;
@@ -50,13 +49,21 @@ padding: 0 15px;
 }
 
 .nav-list {
+  display: flex;
    list-style-type: none;
-   display: flex;
-   padding-left: 0;
+     padding-left: 0;
    padding-top: 32px;
    padding-bottom: 32px;
-
 }
+.nav-list-con {
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .nav-link {
   text-decoration: none;
   font-weight: 500;
@@ -131,18 +138,18 @@ padding: 0 15px;
 .hero-button {
   cursor: pointer;
 }
-/* .benefits-title{
-  position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-} */
+ .benefits-title .portfolio-hidden-title  .visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+ }
 
 .section-benefits{
   padding-top: 94px;
@@ -268,7 +275,7 @@ footer {
   color: var(--hover-link-button-color);
 }
 /* porfolio */
-.portfolio-hiden-title  {
+.portfolio-hidden-title .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -280,11 +287,11 @@ footer {
   clip-path: inset(50%);
   margin: -1px;
 }
-
 .portfolio-list {
   list-style-type: none;
   display: flex;
   justify-content: center;
+  margin-bottom: 34px;
 }
 .portfolio-button {
   font-family: Roboto;
@@ -298,7 +305,7 @@ footer {
   cursor: pointer;
   padding: 6px 22px;
   }
-.portfolio-list>li:not(:last-child){
+.portfolio-list .portfolio-item:not(:last-child){
   margin-right: 8px;
 }
 .portfolio-all {
@@ -306,12 +313,26 @@ footer {
   background-color: var(--hover-link-button-color);
   padding: 6px 25px;
 }
-.portfolio-button:hover {
+.portfolio-button:hover{
   color: var(--white-color);
   background-color: var(--hover-link-button-color);
 }
-.portfolio-list-color {
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-list-color { 
   background-color: #ffffff;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+}
+.portfolio-list-color:nth-child(3n+3){
+  padding-right: 0;
+}
+.portfolio-img{
+  display: block;
+  margin-right: 0;
 }
 .portfolio-title {
   font-weight: 700;
