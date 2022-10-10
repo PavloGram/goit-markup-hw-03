@@ -101,8 +101,8 @@ border-bottom: 1px solid #ececec;
 .section-hero {
   background-color: #2f3032;
   padding-top: 200px;
-  height: 600px;
-}
+  padding-bottom: 200px;
+ }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -127,7 +127,7 @@ border-bottom: 1px solid #ececec;
    display: block; 
     margin-left: auto;
     margin-right: auto;
-  padding: 16px 32px;
+  padding: 10px 32px;
   border-radius: 4px;
 }
 .hero-button:hover,
@@ -278,7 +278,7 @@ footer {
   margin-bottom: 94px;
 }
 /* porfolio */
-.portfolio-hidden-title .benefits-title .visually-hidden {
+.portfolio-hidden-title, .benefits-title, .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -317,7 +317,7 @@ footer {
   padding: 6px 25px;
 }
 .portfolio-button:hover{
-  color: var(--white-color);
+  color: var(--white-text-color);
   background-color: var(--hover-link-button-color);
 }
 .portfolio-list{
