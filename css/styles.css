@@ -28,8 +28,8 @@ padding: 0 15px;
 
 .page-header{
   background-color: var(--white-text-color);
-padding-top: 32px;
-padding-bottom: 32px;
+padding-top: 24px;
+padding-bottom: 24px;
 border-bottom: 1px solid #ececec;
 }
  .page-header .container{
@@ -111,8 +111,7 @@ border-bottom: 1px solid #ececec;
   text-transform: uppercase;
   color: var(--white-text-color);
  text-align: center;
- 
- margin-top: 0;
+  margin-top: 0;
  margin-bottom: 30px;
 }
 .hero-button {
@@ -141,7 +140,7 @@ border-bottom: 1px solid #ececec;
  
 .section-benefits{
   padding-top: 94px;
-margin-bottom: 57px;
+padding-bottom: 94px; 
 }
 .benefits-list {
   display: flex;
@@ -174,8 +173,7 @@ margin-right: 30px;
 }
 .job-section{
   display: flex;
-  padding-top: 57px;
-  padding-bottom: 57px;
+   padding-bottom: 94px;
 }
 .job-list>li:not(:last-child){
   margin-right: 30px;
@@ -191,7 +189,7 @@ margin-right: 30px;
 
 .section-team {
   background-color: #f5f4fa;
-  padding-top: 57px;
+  padding-top: 94px;
 padding-bottom: 94px;
 }
 
@@ -219,8 +217,12 @@ padding-bottom: 94px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  margin-top: 30px;
-  margin-bottom: 10px;
+   margin-bottom: 10px;
+}
+.team-div{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 .team-text {
   font-size: 16px;
@@ -230,8 +232,8 @@ padding-bottom: 94px;
 }
 footer {
   background-color: #2f303a;
-  height: 252px;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   text-decoration: none;
@@ -273,11 +275,11 @@ footer {
 .footer-contact:active {
   color: var(--hover-link-button-color);
 }
-.section-portfolio{
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
 /* porfolio */
+.section-portfolio{
+ padding-top: 94px;
+ padding-bottom: 94px;
+}
 .portfolio-hidden-title, .benefits-title, .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -294,7 +296,7 @@ footer {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   }
 .portfolio-button {
   font-family: Roboto;
@@ -345,7 +347,6 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 .portfolio-text {
@@ -353,6 +354,9 @@ footer {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
+}
+.portfolio-div{
+padding: 20px 24px;
 }
 .lab {
   text-transform: uppercase;
