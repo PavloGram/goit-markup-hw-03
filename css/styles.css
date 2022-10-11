@@ -330,8 +330,7 @@ footer {
   background-color: #ffffff;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
-}
+ }
 .portfolio-list-color:nth-child(3n+3){
   margin-right: 0;
 }
@@ -357,6 +356,9 @@ footer {
 }
 .portfolio-div{
 padding: 20px 24px;
+border-left: 1px solid #eeeeee;
+border-right: 1px solid #eeeeee; ;
+border-bottom: 1px solid #eeeeee;
 }
 .lab {
   text-transform: uppercase;
